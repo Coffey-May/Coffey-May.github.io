@@ -2483,9 +2483,9 @@ h2, h4, .titleCaption{
 
  .portrait{
 	 /* background-color: transparent !important; */
-	 background-image: url('/assets/css/images/Screenshot_20200129_203002.jpg');
-	 height: 100px;
-	 background-size: contain;
+	 background-image: url('/assets/css/images/IMG_20200229_161323.jpg');
+	 height: 150px;
+	 background-size: cover;
 	 background-repeat: no-repeat;
 	 width:150px;
 	margin:0 auto;
@@ -2508,4 +2508,16 @@ h2, h4, .titleCaption{
 	 color:white;
 	
  }
- 
+
+ .Ebox{
+background: transparent;
+ }
+ .description{
+	 font-size: smaller;
+	 text-align: left;
+ }
+
+
+ .pic{
+	
+ }
