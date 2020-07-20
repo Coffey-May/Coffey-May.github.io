@@ -35,6 +35,8 @@ body {
 
 ol, ul {
 	list-style: none;
+	font-family: "Oswald", sans-serif;
+	font-style: italic;
 }
 
 blockquote, q {
@@ -2254,9 +2256,9 @@ input, select, textarea {
 
 	#intro {
 		background:  linear-gradient( 180deg,
-		rgba(11, 12, 12, 0.842), 
-			rgba(94, 229, 231, 0.87), 
-			rgba(34, 4, 61, 0.838)
+		rgb(0, 0, 0), 
+			rgba(5, 20, 14, 0.932), 
+			rgba(59, 59, 59, 0.979)
 		  ), url("images/data2.jpg");
 		
 		background-size:
@@ -2371,6 +2373,7 @@ background-color: transparent !important;
 .navbar-toggler{
  margin-right: 95vw;
  margin-top: -8vh;
+ color:white !important;
 }
 nav .navbar-nav li a{
 	color: white !important;
@@ -2499,7 +2502,8 @@ h2, h4, .titleCaption{
  }
 
  #sec-adjust{
-    margin-top:-10vh;
+	margin-top:-10vh;
+	border-radius: 15%;
  }
  .main.style3.secondary{
 	 background-image: url("./images/data.jpg");
@@ -2519,7 +2523,77 @@ background: transparent;
 	 text-align: left;
  }
 
+ .navbar {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
 
- .pic{
-	
- }
+.navbar-hide {
+    pointer-events: none;
+    opacity: 0;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+
+
+.glitz{
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+
+.glitz:before,
+.glitz:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+.glitz:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+.glitz:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
