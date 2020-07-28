@@ -2266,8 +2266,10 @@ input, select, textarea {
 	transform: scale(1.1); 
 	}
 
-
-	#intro {
+.secondary{
+	opacity: 0.8;
+}
+	#intro, .secondary {
 		background:  linear-gradient( 180deg,
 		rgb(3, 3, 3), 
 		rgba(48, 48, 48, 0.877), 
